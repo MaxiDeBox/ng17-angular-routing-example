@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angular Routing</title>
+</head>
+<body>
+
+  <h1>Angular Router App</h1>
+  @if(showLinks) {
+  <nav>
+    <ul>
+      <li><a routerLink="first-component" routerLinkActive="active" (click)="showLinks = false">First Component</a></li>
+      <li><a routerLink="second-component" routerLinkActive="active" (click)="showLinks = false">Second Component</a></li>
+    </ul>
+  </nav>
+}
+  <!-- The routed views render on <router-outlet> -->
+  <router-outlet></router-outlet>
+
+</body>
+</html>
